@@ -1,0 +1,39 @@
+{
+  "_comment": "Copy this to config.json (the setup wizard does this for you). Every field the writing engine reads lives here. Delete the _comment lines in your real config if you like.",
+
+  "niche": "home espresso machines",
+  "audience": "beginners buying their first machine",
+
+  "site_url": "https://example.com",
+  "site_name": "Example",
+
+  "language": "en-GB",
+  "_language_help": "One of en-GB, en-US, en-CA, en-AU, or another variant. Applied to spelling, dates, currency, idiom.",
+
+  "voice": "warm, practical, expert; plain language; writes like a person, not a brochure",
+  "banned_words": ["your", "extra", "words", "here"],
+  "_banned_words_help": "Added on top of the built-in banned list in references/writing-engine.md. Leave [] if none.",
+
+  "brand": {
+    "colour": "#007AFF",
+    "colour_dark": "#222732",
+    "logo": "brand/logo/logo-white.png",
+    "photos_dir": "brand/photos"
+  },
+
+  "output_mode": "document",
+  "_output_mode_help": "'cms' = WordPress self-hosted draft via scripts/publish.mjs (needs the local Node step). 'document' = deliver each article as Markdown + .docx to upload yourself.",
+
+  "cms": {
+    "type": "wordpress-selfhosted",
+    "wordpress_url": "https://example.com",
+    "default_category_id": 1,
+    "_note": "Category IDs are WordPress-specific. Fill from your site. Credentials live in .env, never here."
+  },
+
+  "cadence": "monthly",
+  "_cadence_help": "weekly | biweekly | monthly | on-demand. Used only to offer a scheduled task.",
+
+  "attribution": true,
+  "_attribution_help": "true appends a small LinkedIn + Buy Me a Coffee footer to each article and shows it once after setup. Set false to turn it off."
+}

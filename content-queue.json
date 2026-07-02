@@ -1,0 +1,60 @@
+{
+  "_comment": "This is the engine's memory of what to write next. It reads the first item with status 'pending' (skipping 'hold'). Add topics any time, or ask the engine to suggest a batch. The two topics below are WORKED EXAMPLES for a fictional espresso blog: delete them and add your own.",
+
+  "language": "en-GB",
+  "output_dir": "drafts",
+
+  "categories": {
+    "_comment": "Only needed for WordPress (cms) mode. Map your archetype types to your real WordPress category IDs. In document mode you can ignore this.",
+    "guide": 1,
+    "comparison": 1,
+    "listicle": 1,
+    "faq": 1,
+    "opinion": 1,
+    "review": 1,
+    "pillar": 1
+  },
+
+  "topics": [
+    {
+      "status": "pending",
+      "id": 1,
+      "title": "How to choose your first espresso machine",
+      "slug": "how-to-choose-your-first-espresso-machine",
+      "type": "guide",
+      "keyword": "first espresso machine",
+      "volume": 1900,
+      "note": "Pillar-style beginner guide. Link later posts up to this one.",
+      "tags": "espresso, beginner, buying guide"
+    },
+    {
+      "status": "pending",
+      "id": 2,
+      "title": "Manual vs automatic espresso machines: which should you buy?",
+      "slug": "manual-vs-automatic-espresso-machines",
+      "type": "comparison",
+      "keyword": "manual vs automatic espresso machine",
+      "volume": 480,
+      "note": "Interlink with the first-machine guide; do not overlap its 'types' section.",
+      "tags": "espresso, manual, automatic, comparison"
+    },
+    {
+      "status": "hold",
+      "id": 3,
+      "title": "Best espresso machines under 500",
+      "slug": "best-espresso-machines-under-500",
+      "type": "listicle",
+      "keyword": "best espresso machine under 500",
+      "note": "HOLD example: only write once the two pillars above are live so this can link up to them."
+    }
+  ],
+
+  "_field_help": {
+    "status": "pending | done | hold",
+    "type": "one of the archetypes in references/writing-engine.md (guide, comparison, listicle, faq, opinion, review, pillar)",
+    "keyword": "the single focus keyphrase for this URL",
+    "output_file": "set by the engine after writing, e.g. how-to-choose-your-first-espresso-machine.md",
+    "seo_title / seo_desc": "set by the engine; used by the WordPress publisher",
+    "category_id": "WordPress only; overrides the categories map above for this topic"
+  }
+}

@@ -1,0 +1,26 @@
+# Secrets
+.env
+.env.local
+
+# The user's own config (keep the repo generic). config.json is created by the wizard
+# from config.example.json. content-queue.json ships seeded with worked examples, so it
+# stays tracked; your edits to it are yours to keep or reset.
+config.json
+drafts/
+research/
+node_modules/
+
+# Brand assets the user drops in (keep placeholders, ignore real files)
+brand/photos/*
+!brand/photos/.gitkeep
+!brand/photos/README.md
+brand/logo/*
+!brand/logo/.gitkeep
+!brand/logo/README.md
+brand/fonts/*
+!brand/fonts/.gitkeep
+!brand/fonts/README.md
+
+# OS junk
+.DS_Store
+Thumbs.db
